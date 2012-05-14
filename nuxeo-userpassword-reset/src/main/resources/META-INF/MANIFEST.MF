@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Nuxeo-WebModule: org.nuxeo.ecm.webengine.app.WebEngineModule;name=rese
+ tPassword;package=org/nuxeo/ecm/user
+Bundle-Vendor: Nuxeo
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .
+Bundle-Version: 5.5
+Bundle-Name: nuxeo-userpassword-reset
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: nuxeo-userpassword-reset
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Nuxeo-Component: OSGI-INF/resetpassword-auth-contrib.xml,
+ OSGI-INF/resetpassword-directory-contrib.xml,
+ OSGI-INF/resetPassword-listener-contrib.xml,
+ OSGI-INF/resetPassword-scheduler-contrib.xml
