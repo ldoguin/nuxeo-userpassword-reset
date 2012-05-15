@@ -1,0 +1,19 @@
+<package type="addon" name="nuxeo-userpassword-reset" version="@VERSION@">
+  <title>Nuxeo Platform User Password Reset</title>
+  <description>
+    <p>Nuxeo Platform User Password Reset adds a forgotten password link to Nuxeo's home page. The user clicks on the link and fill in his email address. He will receive an email shortly after with a one-day valid link. This link gets him to a simple form to reset his forgotten password.</p>
+  </description>
+  <home-page>https://github.com/ldoguin/nuxeo-userpassword-reset</home-page>
+  <vendor>Nuxeo</vendor>
+  <installer restart="true" />
+  <uninstaller restart="true" />
+  <hotreload-support>false</hotreload-support>
+  <nuxeo-validation>nuxeo_certified</nuxeo-validation>
+  <production-state>testing</production-state>
+  <supported>true</supported>
+  <platforms>
+    <platform>cap-5.5</platform>
+  </platforms>
+  <license>LGPL</license>
+  <license-url>http://www.gnu.org/licenses/lgpl.html</license-url>
+</package>

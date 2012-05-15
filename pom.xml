@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.nuxeo.ecm.distribution</groupId>
+    <artifactId>nuxeo-distribution</artifactId>
+    <version>5.5</version>
+  </parent>
+  <packaging>pom</packaging>
+  <groupId>org.nuxeo.ecm.platform</groupId>
+  <artifactId>nuxeo-userpassword-reset-parent</artifactId>
+  <name>nuxeo-userpassword-reset-parent</name>
+  <description/>
+
+  <modules>
+    <module>nuxeo-userpassword-reset</module>
+    <module>nuxeo-marketplace-userpassword-reset</module>
+  </modules>
+
+<dependencyManagement>
+  <dependencies>
+    <dependency>
+      <groupId>org.nuxeo.ecm.platform</groupId>
+      <artifactId>nuxeo-userpassword-reset</artifactId>
+      <version>${pom.version}</version>
+    </dependency>
+  </dependencies>
+</dependencyManagement>
+
+  <scm>
+    <connection>scm:git:git://github.com/ldoguin/nuxeo-userpassword-reset.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com:ldoguin/nuxeo-userpassword-reset.git</developerConnection>
+    <url>https://github.com/ldoguin/nuxeo-userpassword-reset</url>
+  </scm>
+
+  <repositories>
+    <repository>
+      <id>public</id>
+      <url>http://maven.nuxeo.org/nexus/content/groups/public</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+    <repository>
+      <id>public-snapshot</id>
+      <url>http://maven.nuxeo.org/nexus/content/groups/public-snapshot</url>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <snapshots>
+        <updatePolicy>always</updatePolicy>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
+</project>
